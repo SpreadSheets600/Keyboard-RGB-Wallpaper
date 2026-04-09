@@ -4,7 +4,7 @@ Minimal userspace control for **EvoFox Ronin (VID: 320F, PID: 5055)** using raw 
 
 ## Working
 
-![](.github/Video.mp4)
+![](.github/Video.gif)
 
 
 ## Features
