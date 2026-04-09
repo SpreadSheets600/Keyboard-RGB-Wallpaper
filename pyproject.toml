@@ -1,0 +1,9 @@
+[project]
+name = "keyboard-stuff"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "hid-parser>=0.1.0",
+    "hid-tools>=0.12",
+    "hidapi>=0.15.0",
+]
