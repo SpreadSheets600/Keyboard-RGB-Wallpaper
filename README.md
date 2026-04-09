@@ -2,7 +2,10 @@
 
 Minimal userspace control for **EvoFox Ronin (VID: 320F, PID: 5055)** using raw HID (EVision V2 protocol).
 
----
+## Working
+
+![](.github/Video.mp4)
+
 
 ## Features
 
@@ -10,8 +13,6 @@ Minimal userspace control for **EvoFox Ronin (VID: 320F, PID: 5055)** using raw 
 - Wallpaper → color → keyboard pipeline
 - Works on Wayland (Niri, DMS)
 - No OpenRGB required
-
----
 
 ## Usage
 
@@ -25,15 +26,11 @@ With wallpaper sync:
 ./setwall.sh --screen eDP-1 /path/to/wallpaper.jpg
 ```
 
----
-
 ## Requirements
 
 * Python + `hid` (`hidapi`)
 * (Optional) Pillow for color extraction
 * Access to `/dev/hidraw*` (udev rule recommended)
-
----
 
 ## Architecture
 
@@ -48,8 +45,6 @@ flowchart TD
     G --> H[Keyboard RGB]
 ```
 
----
-
 ## Protocol
 
 ```mermaid
@@ -62,7 +57,6 @@ sequenceDiagram
     App->>Keyboard: WRITE_CONFIG (RGB + mode)
     App->>Keyboard: END_CONFIG (0x02)
 ```
----
 
 ## Special Thanks
 
